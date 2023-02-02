@@ -1,0 +1,43 @@
+.lightTheme.mainNav {
+    background: #01005c;
+}
+.darkTheme.mainNav {
+    background: #000;
+    border-bottom: 1px solid #fff;
+}
+.lightTheme.mainNav .logo{
+    color: #fff;
+}
+.darkTheme.mainNav .logo{
+    color: #fff;
+}
+.mainNav .mainNavUl li a {
+    margin: 0px 15px;
+}
+.lightTheme .mainNavUl li a{
+    color: #fff;
+}
+.darkTheme .mainNavUl li a{
+    color: #fff;
+}
+.lightTheme .custom_form_switch label{
+    color: #fff;
+}
+.darkTheme .custom_form_switch label{
+    color: #fff;
+}
+.custom_form_switch input {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.custom_form_switch input:checked {
+    background-color: #ffcf00;
+    border-color: #ffcf00;
+}
+button.navbar-toggler {
+    background: #ffcf00;
+}
+button.navbar-toggler .navbar-toggler-icon {
+    background-image: url("../images/hamburger.svg");
+}

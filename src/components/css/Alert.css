@@ -1,0 +1,23 @@
+.custom_alert {
+    margin: 0;
+    position: absolute;
+    width: 30%;
+    top: 78px;
+    right: 10px;
+}
+.custom_alert p{
+    margin-bottom: 0;
+}
+.custom_alert button.btn-close{
+    font-size: 11px;
+}
+@media (max-width: 550px) {
+    .custom_alert{
+        width: 85%;
+        margin: 0 auto;
+        top: inherit;
+        top: 120px;
+        left: 0;
+        right: 0;
+    }
+}
