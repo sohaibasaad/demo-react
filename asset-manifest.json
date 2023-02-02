@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/demo-react/static/css/main.c7efbf17.css",
+    "main.js": "/demo-react/static/js/main.bf7ac0ac.js",
+    "static/js/787.d42007c4.chunk.js": "/demo-react/static/js/787.d42007c4.chunk.js",
+    "index.html": "/demo-react/index.html",
+    "static/media/hamburger.svg": "/demo-react/static/media/hamburger.2c1af1537eb27de865c3.svg",
+    "main.c7efbf17.css.map": "/demo-react/static/css/main.c7efbf17.css.map",
+    "main.bf7ac0ac.js.map": "/demo-react/static/js/main.bf7ac0ac.js.map",
+    "787.d42007c4.chunk.js.map": "/demo-react/static/js/787.d42007c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7efbf17.css",
+    "static/js/main.bf7ac0ac.js"
+  ]
+}
