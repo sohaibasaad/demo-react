@@ -3,12 +3,12 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
-// import About from './components/About';
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route
-// } from "react-router-dom";
+import About from './components/About';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState("lightTheme");
@@ -40,21 +40,15 @@ function App() {
     }
   }
   return (
-    // <Router>
-    //   <Navbar title="Demo App" aboutText="About Us" mode={mode} toggleMode={toggleMode} toggleModeButton={textModeBtn} />
-    //   <Alert alert={alert} mode={mode} toggleMode={toggleMode} toggleModeButton={textModeBtn} />
-    //   <Routes>
-    //     <Route exact path="/" element={<TextForm heading="Enter the text to transform" showAlert={showAlert} mode={mode} toggleMode={toggleMode} toggleModeButton={textModeBtn} />} />
-    //     <Route exact path="/about" element={<About showAlert={showAlert} mode={mode} toggleMode={toggleMode} toggleModeButton={textModeBtn} />} />
-    //   </Routes>
-    // </Router>
-
-    <>
+    <Router>
       <Navbar title="Demo App" aboutText="About Us" mode={mode} toggleMode={toggleMode} toggleModeButton={textModeBtn} />
       <Alert alert={alert} mode={mode} toggleMode={toggleMode} toggleModeButton={textModeBtn} />
-      <TextForm heading="Enter the text to transform" showAlert={showAlert} mode={mode} toggleMode={toggleMode} toggleModeButton={textModeBtn} />
+      <Routes>
+        <Route exact path="/" element={<TextForm heading="Enter the text to transform" showAlert={showAlert} mode={mode} toggleMode={toggleMode} toggleModeButton={textModeBtn} />} />
+        <Route exact path="/about" element={<About showAlert={showAlert} mode={mode} toggleMode={toggleMode} toggleModeButton={textModeBtn} />} />
+      </Routes>
+    </Router>
 
-    </>
   );
 }
 

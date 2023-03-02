@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './css/Navbar.css';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Navbar(props) {
     return (
@@ -17,14 +17,11 @@ export default function Navbar(props) {
                             <li className="nav-item">
                                 <a className="nav-link active" aria-current="page" href="/">Home</a>
                             </li>
-                            {/* <li className="nav-item">
+                            <li className="nav-item">
                                 <Link className="nav-link" to="/about">{props.aboutText}</Link>
-                            </li> */}
+                            </li>
                         </ul>
-                        {/* <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn custom_btn btn_main mb-0" type="button">Search</button>
-                        </form> */}
+
                         <div className="form-check form-switch custom_form_switch">
                             <input className="form-check-input" type="checkbox" onClick={props.toggleMode} role="switch" aria-checked="true" id="flexSwitchCheckDefault" />
                             <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.toggleModeButton}</label>
