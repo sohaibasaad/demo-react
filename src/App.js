@@ -1,54 +1,43 @@
-import React, { useState } from 'react'
-import './App.css';
-import Navbar from './components/Navbar';
-import TextForm from './components/TextForm';
-import Alert from './components/Alert';
-import About from './components/About';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Route, Navigate, Routes, useLocation } from 'react-router-dom';
+import Header from './components/Header.js';
+import Login from './components/Login.js'
+import Home from './components/Home.js';
+import TotalPayment from './components/TotalPayment.js'
+import VerifyPayment from './components/VerifyPayment.js'
 
 function App() {
-  const [mode, setMode] = useState("lightTheme");
-  const [alert, setAlert] = useState(null);
-  const [textModeBtn, setModeTextBtn] = useState("Enable Dark Mode");
+  // var $ = require( "jquery" )
 
-  const showAlert = (message, type) => {
-    setAlert({
-      msg: message,
-      type: type
-    })
-    setTimeout(() => {
-      setAlert(null)
-    }, 2000);
-  }
-  const toggleMode = () => {
-    if (mode === "lightTheme") {
-      setMode("darkTheme");
-      setModeTextBtn("Enable Light Mode");
-      showAlert("Dark mode enabled", "success");
-      document.title = "Demo App - Dark Mode";
-    }
+  // const [header, setHeader] = useState(false);
 
-    else {
-      setMode("lightTheme");
-      setModeTextBtn("Enable Dark Mode");
-      showAlert("Light mode enabled", "success");
-      document.title = "Demo App - Light Mode";
-    }
-  }
+  // useEffect(() => {
+  //   let currentURL = window.location.pathname
+  //   console.log(currentURL)
+  //   if (currentURL === '' || currentURL === '/' || currentURL === '/login' || currentURL === 'logout') {
+  //     setHeader(false);
+  //   }
+  //   else {
+  //     setHeader(true);
+  //   }
+  // }, []);
+
+  const location = useLocation();
+  const { pathname } = location;
+  const noHeaderPaths = ['/login', '', '/', '/logout'];
+  const showHeader = !noHeaderPaths.includes(pathname);
+
   return (
-    <Router>
-      <Navbar title="Demo App" aboutText="About Us" mode={mode} toggleMode={toggleMode} toggleModeButton={textModeBtn} />
-      <Alert alert={alert} mode={mode} toggleMode={toggleMode} toggleModeButton={textModeBtn} />
+    <div className="App">
+      {showHeader && <Header />}
       <Routes>
-        <Route exact path="/" element={<TextForm heading="Enter the text to transform" showAlert={showAlert} mode={mode} toggleMode={toggleMode} toggleModeButton={textModeBtn} />} />
-        <Route exact path="/about" element={<About showAlert={showAlert} mode={mode} toggleMode={toggleMode} toggleModeButton={textModeBtn} />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route exact path="/" element={<Login />} />
+        <Route exact path="/home" element={<Home />} />
+        <Route exact path="/total-payments" element={<TotalPayment />} />
+        <Route exact path="/verify-payment" element={<VerifyPayment />} />
       </Routes>
-    </Router>
-
+    </div >
   );
 }
 

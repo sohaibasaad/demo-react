@@ -1,0 +1,34 @@
+.box-link{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.main-box {
+    box-shadow: 0px 0px 5px 2px #eee;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.5s all ease;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.main-box .box-heading h5 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.main-box .box-icon {
+    width: 110px;
+    margin: 15px auto;
+}
+.main-box .box-icon h5{
+    font-size: 22px;
+    font-weight: 600;
+}
+.main-box:hover{
+    transform: scale(1.05);
+}
