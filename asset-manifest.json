@@ -1,16 +1,19 @@
 {
-  "files": {
-    "main.css": "/demo-react/static/css/main.017b2a3e.css",
-    "main.js": "/demo-react/static/js/main.8953c124.js",
-    "static/js/787.d42007c4.chunk.js": "/demo-react/static/js/787.d42007c4.chunk.js",
-    "index.html": "/demo-react/index.html",
-    "static/media/hamburger.svg": "/demo-react/static/media/hamburger.2c1af1537eb27de865c3.svg",
-    "main.017b2a3e.css.map": "/demo-react/static/css/main.017b2a3e.css.map",
-    "main.8953c124.js.map": "/demo-react/static/js/main.8953c124.js.map",
-    "787.d42007c4.chunk.js.map": "/demo-react/static/js/787.d42007c4.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.017b2a3e.css",
-    "static/js/main.8953c124.js"
-  ]
+  "main.css": "/demo-react/static/css/main.21477dcf.chunk.css",
+  "main.js": "/demo-react/static/js/main.e3f9f3e3.chunk.js",
+  "main.js.map": "/demo-react/static/js/main.e3f9f3e3.chunk.js.map",
+  "static/css/1.932a38c8.chunk.css": "/demo-react/static/css/1.932a38c8.chunk.css",
+  "static/js/1.c76d7d20.chunk.js": "/demo-react/static/js/1.c76d7d20.chunk.js",
+  "static/js/1.c76d7d20.chunk.js.map": "/demo-react/static/js/1.c76d7d20.chunk.js.map",
+  "runtime~main.js": "/demo-react/static/js/runtime~main.540a7911.js",
+  "runtime~main.js.map": "/demo-react/static/js/runtime~main.540a7911.js.map",
+  "static/media/icon-2.png": "/demo-react/static/media/icon-2.0c270243.png",
+  "static/media/icon-3.png": "/demo-react/static/media/icon-3.08ec843f.png",
+  "static/media/primereact.css": "/demo-react/static/media/color.c7a33805.png",
+  "static/media/primeicons.css": "/demo-react/static/media/primeicons.1d854e3a.svg",
+  "static/css/main.21477dcf.chunk.css.map": "/demo-react/static/css/main.21477dcf.chunk.css.map",
+  "static/css/1.932a38c8.chunk.css.map": "/demo-react/static/css/1.932a38c8.chunk.css.map",
+  "index.html": "/demo-react/index.html",
+  "precache-manifest.90c5d5787b49e5f19ffe870342eb53cf.js": "/demo-react/precache-manifest.90c5d5787b49e5f19ffe870342eb53cf.js",
+  "service-worker.js": "/demo-react/service-worker.js"
 }
